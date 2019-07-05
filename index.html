@@ -27,7 +27,7 @@
     <meta name="theme-color" content="#ffffff">
 
     <meta property="og:title" content="Sebastian Hallum Clarke"/>
-    <meta name="description" content="I&#39;m in my final year of studying computer science and entrepreneurship at Princeton University. When I graduate in June 2019, I&#39;ll be starting work as an Associate Product Manager at Google.">
+    <meta name="description" content="I love designing, building and improving systems. I'm a New&nbsp;Zealander living in San&nbsp;Francisco, working as an Associate Product&nbsp;Manager at Google.">
     <meta property="og:site_name" content="Sebastian Hallum Clarke"/>
     <meta property="og:locale" content="en_GB"/>
     <meta property="og:url" content="https://www.sebthedev.com/"/>
@@ -71,7 +71,9 @@
           <div class="col mt-4 mt-md-auto">
             <h1 class="display-4">Hi, I'm Sebastian!</h1>
             <p class="lead">
-              I'm a New Zealander in my final year of studying computer science and entrepreneurship at Princeton&nbsp;University. When I graduate in June 2019, I'll be starting work as an Associate Product Manager at Google.
+              I love designing, building and improving systems. I'm a New&nbsp;Zealander living in San&nbsp;Francisco, working as an Associate Product&nbsp;Manager at Google.
+              <span title="I'm from New Zealand">🥝</span>
+              <span title="I'm an alumnus of Princeton University's class of 2019">🐯</span>
             </p>
             <hr class="my-4">
             <style>
@@ -94,8 +96,8 @@
           </div>
         </div>
       </div>
-      <h2 id="work">My Work</h2>
-      <div class="card-columns">
+      <h2 id="work">My Experience</h2>
+      <div class="card-columns" id="experience-cards">
         <div class="card">
           <img class="card-img-top" src="./images/googleplex.png" alt="Googleplex">
           <div class="card-body">
@@ -148,12 +150,12 @@
           </div>
         </div>
         <div class="card">
-          <a href="https://www.keepasking.io" target="_blank">
+          <a href="https://github.com/Keep-Asking/keep-asking" target="_blank">
             <img class="card-img-top" src="./images/keepasking_screenshot.png" alt="A screenshot of the Princeton Courses website">
           </a>
           <div class="card-body">
             <h5 class="card-title">
-              <a href="https://www.keepasking.io" target="_blank">
+              <a href="https://github.com/Keep-Asking/keep-asking" target="_blank">
                 Keep Asking
               </a>
             </h5>
@@ -172,7 +174,7 @@
           <div class="card-body">
             <h5 class="card-title">
               <a href="https://mongodb.github.io/node-mongodb-native/" target="_blank">
-                SWE Internship at MongoDB
+                Software Engineering Internship at MongoDB
               </a>
             </h5>
             <h6 class="card-subtitle mb-2 text-muted">Summer 2017 internship</h6>
@@ -207,7 +209,7 @@
         </div>
         <div class="card">
           <a href="https://www.specialeducationresources.org" target="_blank">
-            <img class="card-img-top" src="./images/specialeducationresources.png" alt="Screenshot of www.specialeducationresources.org">
+            <img class="card-img-top" src="./images/specialeducationresources_screenshot.png" alt="Screenshot of www.specialeducationresources.org">
           </a>
           <div class="card-body">
             <h5 class="card-title">
@@ -231,5 +233,12 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script>
+      // Shuffle the experience tiles
+      var ul = document.getElementById("experience-cards");
+      for (var i = ul.children.length; i >= 0; i--) {
+        ul.appendChild(ul.children[Math.random() * i | 0]);
+      }
+    </script>
   </body>
 </html>
