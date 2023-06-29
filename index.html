@@ -98,6 +98,8 @@
           </div>
         </div>
       </div>
+      <h2 id="writing">My Writing</h2>
+      <div id="substack-feed-embed"></div>
       <h2 id="work">My Experience</h2>
       <div class="card-columns" id="experience-cards">
         <div class="card">
@@ -239,5 +241,13 @@
         ul.appendChild(ul.children[Math.random() * i | 0]);
       }
     </script>
+    <script>
+  window.SubstackFeedWidget = {
+    substackUrl: "www.sidewalkchorus.com",
+    posts: 3,
+    hidden: ["comments", "reactions", "author"]
+  };
+</script>
+<script src="https://substackapi.com/embeds/feed.js" async></script>
   </body>
 </html>
