@@ -104,22 +104,25 @@
       </div>
     </div>
     <p class="text-center text-muted small" style="opacity: 0.5">
-      &copy; Sebastian Hallum Clarke 2019
+      &copy; Sebastian Hallum Clarke <span id="year"></span>
     </p>
     <script>
-      // Shuffle the experience tiles
-      var ul = document.getElementById("experience-cards");
-      for (var i = ul.children.length; i >= 0; i--) {
-        ul.appendChild(ul.children[Math.random() * i | 0]);
-      }
+      // Get the current year
+      const currentYear = new Date().getFullYear();
+
+      // Find the element with the ID 'year'
+      const yearElement = document.getElementById('year');
+
+      // Insert the current year into the element
+      yearElement.textContent = currentYear;
     </script>
     <script>
-  window.SubstackFeedWidget = {
-    substackUrl: "www.sidewalkchorus.com",
-    posts: 6,
-    hidden: ["comments", "reactions", "author"]
-  };
-</script>
-<script src="https://substackapi.com/embeds/feed.js" async></script>
+      window.SubstackFeedWidget = {
+        substackUrl: "www.sidewalkchorus.com",
+        posts: 6,
+        hidden: ["comments", "reactions", "author"]
+      };
+    </script>
+    <script src="https://substackapi.com/embeds/feed.js" async></script>
   </body>
 </html>
