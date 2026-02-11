@@ -4,7 +4,11 @@
     <title>Sebastian Hallum Clarke: MacDropAny</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./styles.css">
 
     <link rel="apple-touch-icon" sizes="57x57" href="./images/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="./images/favicon/apple-icon-60x60.png">
@@ -62,11 +66,6 @@
       </div>
     </nav>
     <div class="container my-5">
-      <style>
-        .accordion .card-header {
-          cursor: pointer;
-        }
-      </style>
       <div class="text-center">
         <h1>Unleash the power of the cloud with MacDropAny</h1>
         <p class="lead">
@@ -79,7 +78,7 @@
       </div>
       <div class="row mt-5">
         <div class="col-sm-5">
-          <img src="./images/macdropany4_screenshot.png" style="width: 100%; max-width: 400px;" alt="A screenshot of the MacDropAny interface">
+          <img src="./images/macdropany4_screenshot.png" class="product-screenshot" style="width: 100%; max-width: 400px;" alt="A screenshot of the MacDropAny interface">
           <div class="my-3">
             <h4>Supported Cloud Storage Services:</h4>
             <div class="row">
@@ -274,9 +273,14 @@
         </div>
       </div>
     </div>
-    <p class="text-center text-muted small" style="opacity: 0.5">
-      &copy; Sebastian Hallum Clarke 2019
-    </p>
+    <footer class="site-footer">
+      <div class="container">
+        &copy; Sebastian Hallum Clarke <span id="year"></span>
+      </div>
+    </footer>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha256-CjSoeELFOcH0/uxWu6mC/Vlrc1AARqbm/jiiImDGV3s=" crossorigin="anonymous"></script>
