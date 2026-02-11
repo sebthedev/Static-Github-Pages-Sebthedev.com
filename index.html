@@ -13,8 +13,11 @@
     <title>Sebastian Hallum Clarke</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=" crossorigin="anonymous"/>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" crossorigin="anonymous"/> -->
+    <link rel="stylesheet" href="./styles.css">
     <script src="https://kit.fontawesome.com/6fe88e26db.js" crossorigin="anonymous"></script>
 
     <link rel="apple-touch-icon" sizes="57x57" href="./images/favicon/apple-icon-57x57.png">
@@ -63,7 +66,7 @@
       <div class="jumbotron">
         <div class="row align-items-center">
           <div class="col-md-3 text-center">
-            <img src="./images/headshot.jpeg" class="img-fluid rounded" style="width:100%; max-width: 300px;" title="Headshot of Sebastian" alt="Headshot of Sebastian Hallum Clarke">
+            <img src="./images/headshot.jpeg" class="img-fluid headshot" style="width:100%; max-width: 300px;" title="Headshot of Sebastian" alt="Headshot of Sebastian Hallum Clarke">
           </div>
           <div class="col mt-4 mt-md-auto">
             <h1 class="display-4">Hi, I'm Sebastian!</h1>
@@ -74,13 +77,6 @@
               <span title="I live in New York City">🗽</span>
             </p>
             <hr class="my-4">
-            <style>
-              .social a {
-                text-decoration: none;
-                font-size: 30px;
-                margin-right: 7.5px;
-              }
-            </style>
             <div class="social">
               <a href="https://www.threads.net/sebthedev" class="fa-brands fa-threads" title="Threads profile" aria-label="Sebastian on Threads"></a>
               <a href="https://www.twitter.com/sebthedev" class="fa-brands fa-twitter" title="Twitter profile" aria-label="Sebastian on Twitter"></a>
@@ -113,9 +109,11 @@
         </p>
       </div>
     </div>
-    <p class="text-center text-muted small" style="opacity: 0.5">
-      &copy; Sebastian Hallum Clarke <span id="year"></span>
-    </p>
+    <footer class="site-footer">
+      <div class="container">
+        &copy; Sebastian Hallum Clarke <span id="year"></span>
+      </div>
+    </footer>
     <script>
       // Get the current year
       const currentYear = new Date().getFullYear();
